@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#4b4b4b">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Make page mobile-friendly -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Make chrome mobile color dark gray -->
+  <meta name="theme-color" content="#202020">
+
+  <!-- All the Bootstrap stuff -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../js/pdfobject.js"></script>
+
+  <!-- Other header content -->
+  <title>Ryan Ryu</title>
+
+</head>
+
+<body style="background-color: #FFFFFF; background-size: cover; margin-bottom:15px">
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid" style="max-width: 768px;">
+      <div class="navbar-header">
+        <img src="../img/navbar/dropdown.png" type="button" class="navbar-toggle" height="40px" data-toggle="collapse"
+          data-target="#navbar" style="border-color: transparent; margin: 5px;"></img>
+        <a class="navbar-brand"><img src="../img/navbar/logo.png"
+            style="height: 100%; pointer-events: none; user-select: none;" unselectable="on" /></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <p class="navbar-text collapse navbar-collapse">Ryan Ryu</p>
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="./index.html">Research Projects</a></li>
+          <li><a href="../community-projects/index.html">Community Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Body content -->
+  <!-- The complex styling is to make the container fill vertical space accounting for navbar/padding for navbar -->
+  <div class="container-fluid"
+    style="margin-top: 50px; min-height: -webkit-calc(100vh - 50px); min-height: -moz-calc(100vh - 50px); min-height: calc(100vh - 50px);">
+
+    <!-- Title -->
+    <div class="container text-center" style="margin-top: 15px; width: 90%; max-width: 768px; margin: auto;">
+      <h1>Volatile Organic Compounds (VOC) and Particulate Matter (PM) Adsorption of Alginate Gel Research</h1>
+
+    </div>
+
+    <div class="row text-center"
+      style="width: 90%; max-width: 1024px; margin: auto; margin-top: 15px; line-height: 24px">
+      <hr />
+      <div class="row">
+        <div class="p page_body">Starting from June of 2018, I conducted a research on
+          Particulate Matter (PM)
+          Adsorption of Alginate Gel with one other student. This research was a response to the recent rise in the
+          atmosphere PM concentration in South Korea. Through the research, I investigated for alginate gel’s efficiency
+          in adsorbing Particulate Matter and possible applications of alginate gel as an air purifier in a real life
+          environment. With this research, I earned a silver medal in Chemical Frontier Festival (ChemFF) and a bronze
+          medal in Korea Science Engineering Festival (KSEF). Later, the research was expanded to an investigation for
+          whether alginate gel also adsorbs VOCs. With this expanded research, I earned a gold medal in Genius Olympiad.
+        </div>
+        </br></br>
+        <div id="document1", class="border"></div>
+        </br>
+        <div id="document2", class="border"></div>
+        <script>
+        var options = {
+          pdfOpenParams: {
+          view: 'FitH'
+          }
+        };
+        PDFObject.embed("../img/projects/vocpm/voc_poster.pdf", "#document1", options);
+        PDFObject.embed("../img/projects/vocpm/voc_report.pdf", "#document2", options);
+        </script>
+        </br>
+        <img style="width:100%; box-shadow:0px 0px 10px #404040;margin:auto;" src="../img/projects/vocpm/img1.jpg" /></img>
+        </br></br></br>
+        <img style="width:100%; box-shadow:0px 0px 10px #404040;margin:auto;" src="../img/projects/vocpm/img2.jpg" /></img>
+        </br></br></br>
+        <img style="width:100%; box-shadow:0px 0px 10px #404040;margin:auto;" src="../img/projects/vocpm/img3.jpg" /></img>
+        </br></br></br>
+        <img style="width:100%; box-shadow:0px 0px 10px #404040;margin:auto;" src="../img/projects/vocpm/img4.jpg" /></img>
+      </div>
+      <hr />
+    </div>
+  </div>
+
+  <body>
+
+</html>

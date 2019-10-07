@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#4b4b4b">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Make page mobile-friendly -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Make chrome mobile color dark gray -->
+  <meta name="theme-color" content="#202020">
+
+  <!-- All the Bootstrap stuff -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Other header content -->
+  <title>Ryan Ryu</title>
+
+</head>
+
+<body style="background-color: #FFFFFF; background-size: cover; margin-bottom:15px">
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid" style="max-width: 768px;">
+      <div class="navbar-header">
+        <img src="../img/navbar/dropdown.png" type="button" class="navbar-toggle" height="40px" data-toggle="collapse"
+          data-target="#navbar" style="border-color: transparent; margin: 5px;"></img>
+        <a class="navbar-brand"><img src="../img/navbar/logo.png"
+            style="height: 100%; pointer-events: none; user-select: none;" unselectable="on" /></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <p class="navbar-text collapse navbar-collapse">Ryan Ryu</p>
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../research-projects/index.html">Research Projects</a></li>
+          <li class="active"><a href="./index.html">Community Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Body content -->
+  <!-- The complex styling is to make the container fill vertical space accounting for navbar/padding for navbar -->
+  <div class="container-fluid"
+    style="margin-top: 50px; min-height: -webkit-calc(100vh - 50px); min-height: -moz-calc(100vh - 50px); min-height: calc(100vh - 50px);">
+
+    <!-- Title -->
+    <div class="container text-center" style="margin-top: 15px; width: 90%; max-width: 768px; margin: auto;">
+      <h1>Late Pass Project</h1>
+
+    </div>
+
+    <div class="row text-center"
+      style="width: 90%; max-width: 1024px; margin: auto; margin-top: 15px; line-height: 24px">
+      <hr />
+      <div class="row">
+        <div class="p page_body">Four months before the Summer break of my junior year, I began working on a project to simplify the school’s late pass procedure with another member from the Computer Programming club in my school. Initially, when a student came late to school, he or she had to come by the high school office to receive a late pass, then return to class. With the late pass project, we wanted to program a printer in the school so that when a student scans their student id card on the printer, the printer prints out the late pass, and sends an email to the high school office and the teacher that notifies the student’s arrival. We quickly began working on the project. The compiled list of student names and their corresponding id numbers were used to identify the student when the student scans their id card on the printer. Using this as a basis, we made two different codes: one that sends an email to the high school office and the teacher, and one that prints the late pass out. With the completion of this project, I made the entire late pass system much more time efficient. 
+        </div>
+        </br></br>
+        <img style="width:100%; box-shadow:0px 0px 10px #404040;margin:auto;" src="../img/projects/project.png" /></img>
+      </div>
+      <hr />
+    </div>
+  </div>
+
+  <body>
+
+</html>
